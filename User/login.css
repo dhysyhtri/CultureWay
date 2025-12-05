@@ -1,0 +1,110 @@
+/* Full Page Layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e4663;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-page width */
+    height: 100%; /* Full-page height */
+    background-image: url('Login\ Background.png'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Login Form Container */
+.login-form-container {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Adjust from the right */
+    transform: translateY(-50%);
+    width: 400px;
+    background: white;
+    padding: 4.5rem 2rem; /* Increase padding for length */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1;
+}
+
+/* Logo and Slogan */
+.logo {
+    font-size: 2.5rem;
+    color: #2e4663;
+    margin-bottom: 2.5rem;
+}
+
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 1.5rem;
+    font-weight: 80px;
+    color: #2e4663;
+    margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: #2e4663;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #1f3550;
+}
+
+/* Signup Text */
+.signup-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.signup-text a {
+    color: #2e4663;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}

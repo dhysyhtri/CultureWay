@@ -1,0 +1,251 @@
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 30px !important; 
+    font-weight: bold; 
+    color: #fff !important; 
+}
+
+.navbar {
+    transition: background-color 0.4s ease, border-bottom 0.4s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #2e4663; 
+    border-bottom: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.4s ease;
+    margin-right: 15px; /* jarak antar menu */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #C8A638; 
+}
+
+.navbar .login-btn {
+    background-color: transparent;
+    padding: 5px 50px;
+    border: 1px solid #C8A638; 
+    border-radius: 10px; 
+    color: white; 
+    font-weight: 500;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e0c078; 
+    color: #2e4663;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 12px;
+}
+
+/*Hero*/
+.hero-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(4, 33, 67, 0.5);
+    z-index: 0;
+}
+
+.hero-jawa {
+    background-image: url('Hero\ Jawa.png');
+}
+.hero-sumatra {
+    background-image: url('Hero\ Sumatra.png');
+}
+.hero-kalimantan {
+    background-image: url('Hero\ Kalimantan.png');
+}
+.hero-sulawesi {
+    background-image: url('Hero\ Sulawesi.png');
+}
+.hero-bali {
+    background-image: url('Hero\ Bali.png');
+}
+.hero-nusa {
+    background-image: url('Hero\ Nusa\ Tenggara.png');
+}
+.hero-maluku {
+    background-image: url('Hero\ Maluku.png');
+}
+.hero-papua {
+    background-image: url('Hero\ Papua.png');
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Destinasi*/
+.destination-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 4rem 4rem; 
+}
+
+.destination-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #2e4663;
+}
+
+.destination-card p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 0 0 1.5rem;
+}
+
+.destination-card .visit-btn {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #2e4663;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.destination-card .visit-btn:hover {
+    background-color: #1e3349;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2E4663, #587FA7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section form {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+button {
+    background-color: #9AB3CA;
+    color: #2E4663;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E4663;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

@@ -1,0 +1,270 @@
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 30px !important; 
+    font-weight: bold; 
+    color: #fff !important; 
+}
+
+.navbar {
+    transition: background-color 0.4s ease, border-bottom 0.4s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #2e4663; 
+    border-bottom: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.4s ease;
+    margin-right: 15px; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #C8A638; 
+}
+
+.navbar .login-btn {
+    background-color: transparent;
+    padding: 5px 50px;
+    border: 1px solid #C8A638; 
+    border-radius: 10px; 
+    color: white; 
+    font-weight: 500;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e0c078; 
+    color: #2e4663;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 12px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Hero\ 3.png'); /* Gambar hero */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    padding: 150px 20px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Bayangan yang lebih dalam */
+    letter-spacing: 1px; /* Memberikan sedikit jarak antar huruf */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #f3f3f3; /* Warna abu cerah */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Bayangan lebih halus */
+    font-style: italic; /* Memberikan kesan eksklusif */
+    text-align: center;
+}
+  
+/* General Styles */
+.event-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.event-category {
+    margin-bottom: 40px;
+}
+
+.event-category h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2e4663;
+    font-weight: bold;
+}
+
+.event-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.event-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Makes sure content is aligned properly */
+}
+
+.event-box:hover {
+    transform: translateY(-5px);
+}
+
+.event-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Title Styling */
+.event-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    min-height: 60px; /* Ensures titles are aligned */
+    color: #2e4663;
+}
+
+/* Event Info */
+.event-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    gap: 2px;
+    margin-bottom: 10px;
+    text-align: left;
+    min-height: 50px; /* Ensures consistency */
+}
+
+.event-date, 
+.event-location {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Event Description */
+.event-description {
+    margin-top: auto; /* Pushes description to the bottom */
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    min-height: 40px; /* Ensures all descriptions align */
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 600px) {
+    .event-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2E4663, #587FA7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section form {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+button {
+    background-color: #9AB3CA;
+    color: #2E4663;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E4663;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

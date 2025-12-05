@@ -1,0 +1,308 @@
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 30px !important; 
+    font-weight: bold; 
+    color: #fff !important; 
+}
+
+.navbar {
+    transition: background-color 0.4s ease, border-bottom 0.4s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #2e4663; 
+    border-bottom: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.4s ease;
+    margin-right: 15px; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #C8A638; 
+}
+
+.navbar .login-btn {
+    background-color: transparent;
+    padding: 5px 50px;
+    border: 1px solid #C8A638; 
+    border-radius: 10px; 
+    color: white; 
+    font-weight: 500;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e0c078; 
+    color: #2e4663;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 12px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Hero 6.png'); /* Gambar hero */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    padding: 150px 20px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Bayangan yang lebih dalam */
+    letter-spacing: 1px; /* Memberikan sedikit jarak antar huruf */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #f3f3f3; /* Warna abu cerah */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Bayangan lebih halus */
+    font-style: italic; /* Memberikan kesan eksklusif */
+    text-align: center;
+}
+
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #2e4663;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 60px; /* Padding untuk jarak dari sisi layar */
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Text Section */
+.description .text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.description .text h2 {
+    font-size: 32px;
+    color: #2e4663;
+    margin-bottom: 20px;
+}
+
+.description .text p {
+    font-size: 18px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Image Section */
+.image-container {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.image-container .image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    max-height: 400px; /* Batasi tinggi maksimal gambar */
+}
+
+/* Vision & Mission */
+.vision-mission {
+    text-align: center;
+}
+
+.vision-mission h2 {
+    margin-bottom: 30px;
+}
+
+.vision, .mission {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    text-align: justify;
+}
+
+.vision h3, .mission h3 {
+    font-size: 24px;
+    color: #2e4663;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission ul {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.member h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.member p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Values Section */
+.values {
+    text-align: center;
+    font-size: 18px;
+    color: #2e4663;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2E4663, #587FA7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section form {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+button {
+    background-color: #9AB3CA;
+    color: #2E4663;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E4663;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

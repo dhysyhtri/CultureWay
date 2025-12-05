@@ -1,0 +1,267 @@
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 30px !important; 
+    font-weight: bold; 
+    color: #fff !important; 
+}
+
+.navbar {
+    transition: background-color 0.4s ease, border-bottom 0.4s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: #2e4663; 
+    border-bottom: none;
+}
+
+.navbar .nav-link {
+    color: white;
+    transition: color 0.4s ease;
+    margin-right: 15px; 
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #C8A638; 
+}
+
+.navbar .login-btn {
+    background-color: transparent;
+    padding: 5px 50px;
+    border: 1px solid #C8A638; 
+    border-radius: 10px; 
+    color: white; 
+    font-weight: 500;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar .login-btn:hover {
+    background-color: #e0c078; 
+    color: #2e4663;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 12px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('Hero 4.png'); /* Gambar hero */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    padding: 150px 20px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay gelap */
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: white; 
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Bayangan yang lebih dalam */
+    letter-spacing: 1px; /* Memberikan sedikit jarak antar huruf */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: #f3f3f3; /* Warna abu cerah */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Bayangan lebih halus */
+    font-style: italic; /* Memberikan kesan eksklusif */
+    text-align: center;
+}
+
+.culture-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.culture-category {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.culture-category h2 {
+    font-size: 2.3rem;
+    color: #2e4663;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.culture-category h3 {
+    font-size: 1.8rem;
+    color: #2e4663;
+    margin: 40px 0 20px; /* Atur jarak atas untuk Festival Budaya */
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.category-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Hilangkan underline */
+}
+
+.category-box:focus,
+.category-box:active {
+    outline: none; /* Hilangkan garis biru saat elemen diklik */
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-box img {
+    width: 100%;
+    height: 200px; /* Sesuaikan tinggi gambar */
+    object-fit: cover; /* Pastikan gambar proporsional */
+    border-bottom: 1px solid #ddd;
+}
+
+.category-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category-info h3 {
+    font-size: 1.4rem;
+    color: #2e4663;
+    margin-bottom: 8px;
+}
+
+.category-info p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+    text-align: center; /* Posisi teks p di tengah */
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .category-grid {
+        grid-template-columns: 1fr; /* Satu kolom untuk layar kecil */
+    }
+
+    .category-box img {
+        height: 150px; /* Sesuaikan tinggi gambar pada layar kecil */
+    }
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2E4663, #587FA7);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 50px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section form {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a img {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+button {
+    background-color: #9AB3CA;
+    color: #2E4663;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2E4663;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
